@@ -20,7 +20,7 @@ namespace Project.API.BusinessLogic
             result = _customerRepository.GetAllQueryable().Where(s => s.IsDeleted == false).ToList();
             return result;
         }
-        public bool GetActiveCustomers(Customer customer)
+        public bool InsertCustomer(Customer customer)
         {
             var isAdded = false;
             try
